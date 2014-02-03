@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sig Fig Calculator</title>
+  </head>
+
+  <body>
+    <div id="nav">
+      <p class="left">Sig Fig Calculator</p>
+    </div>
+
+    <div id="content">
+      <div id="num-of">
+        <h1>Number of sig figs</h1>
+        <input id="num-in" type="text" placeholder="type measurement here" onkeyup="numOfSigFigs()"/>
+        <span id="sig-fig-out">The number of sig figs is:</span>
+      </div>
+
+      <hr>
+
+      <div id="multi-divide">
+        <h1>Two term multiplication and division*</h1>
+        <p style="font-size: 12px">
+          *Multiplication only works with integers and division doesn't work at all... yet.
+        </p>
+        <div id="multi">
+          <input id="multi1" class="two-term" type="text" onkeyup="multiplyTerms()"/>
+          &times;
+          <input id="multi2" class="two-term" type="text" onkeyup="multiplyTerms()"/>
+          <span id="multi-out">=</span>
+        </div>
+
+        <div id="divide">
+          <input id="divide1" class="two-term" type="text" onkeyup="divideTerms()"/>
+          &divide;
+          <input id="divide2" class="two-term" type="text" onkeyup="divideTerms()"/>
+          <span id="divide-out">=</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="add-subtract">
+        <h1>Two term addition and subtraction*</h1>
+        <p style="font-size: 12px">
+          *Nothing works... yet.
+        </p>
+        <div id="add">
+          <input id="add1" class="two-term" type="text" onkeyup="addTerms()"/>
+          +
+          <input id="add2" class="two-term" type="text" onkeyup="addTerms()"/>
+          <span id="add-out">=</span>
+        </div>
+
+        <div id="subtract">
+          <input id="subtract1" class="two-term" type="text" onkeyup="subtractTerms()"/>
+          &#8722;
+          <input id="subtract2" class="two-term" type="text" onkeyup="subtractTerms()"/>
+          <span id="subtract-out">=</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p class="right">By Phillip Kheyfets</p>
+    </div>
+  </body>
+  
+</html>
